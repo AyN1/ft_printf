@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 12:25:35 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/06 12:25:35 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/06 13:14:55 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,24 +90,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end(ap);
 	return (count);
-}
-
-int	main(void)
-{
-	int	count;
-	int	test;
-
-	test = INT32_MIN;
-	ft_printf("Hello %s, today is %d, in hex %x, char->%c\n");
-	// printf("Hello %s, today is %d, in hex %x, char->%c\n");
-	// ft_printf("test\n");
-	/*	count = ft_printf("Hello %s\n", "John");
-		ft_printf("count(%d)\n", count);
-		count = ft_printf("[%d]\n", test);
-		ft_printf("The chars written are [%d]\n", count);
-		// real
-		count = printf("[%d]\n", test);
-		printf("The chars written are [%d]\n", count);
-	*/
-	return (0);
 }
