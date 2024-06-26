@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 12:13:28 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/26 12:15:04 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/26 13:40:06 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_print_str(char *str)
 	}
 	while (*str != 0)
 	{
-		print_char((int)*str);
+		ft_print_char((int)*str);
 		++count;
 		++str;
 	}

@@ -6,13 +6,13 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 12:25:35 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/26 13:36:55 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/26 13:39:08 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_char(int c)
+int	ft_print_char(int c)
 {
 	return (write(1, &c, 1));
 }
@@ -23,7 +23,7 @@ int	print_format(char specifier, va_list ap)
 
 	count = 0;
 	if (specifier == 'c')
-		count = print_char(va_arg(ap, int));
+		count = ft_print_char(va_arg(ap, int));
 	else if (specifier == 's')
 		count += ft_print_str(va_arg(ap, char *));
 	else if (specifier == 'p')

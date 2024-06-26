@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 12:01:37 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/26 12:30:42 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/26 13:39:38 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int	ft_print_digit(long n, int base, char specifier)
 	else if (n < base)
 	{
 		if (specifier == 'x')
-			return (print_char(symbols[n]));
+			return (ft_print_char(symbols[n]));
 		else
-			return (print_char(cap_sym[n]));
+			return (ft_print_char(cap_sym[n]));
 	}
 	else
 	{

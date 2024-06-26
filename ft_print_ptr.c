@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 12:32:50 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/26 13:21:45 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/26 13:39:27 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_put_addr(unsigned long n)
 	symbols = "0123456789abcdef";
 	count = 0;
 	if (n < 16)
-		return (print_char(symbols[n]));
+		return (ft_print_char(symbols[n]));
 	else
 	{
 		count = ft_put_addr(n / 16);
