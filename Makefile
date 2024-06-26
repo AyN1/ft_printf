@@ -1,6 +1,3 @@
-libft:
-	$(MAKE) -C libft
-
 #Variables
 NAME = libftprintf.a
 CC = gcc
