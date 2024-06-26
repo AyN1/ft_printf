@@ -6,10 +6,11 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 13:14:30 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/26 11:21:18 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/26 12:14:26 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -35,5 +36,6 @@ int	main(void)
 	count = printf("[%d]\n", test);
 	printf("hex: [%X]\n", 100023);
 	printf("The chars written are [%d]\n", count);
+	// LIBFT test
 	return (0);
 }
