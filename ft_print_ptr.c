@@ -6,13 +6,13 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 12:32:50 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/26 13:39:27 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/26 14:04:48 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_put_addr(unsigned long n)
+int	ft_put_addr(unsigned long long n)
 {
 	char	*symbols;
 	int		count;
