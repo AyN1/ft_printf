@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror -Iinclude
 RM = rm -rf
 
 #Paths
-SRCS	= ft_printf.c ft_print_digit.c ft_print_str.c
+SRCS	= ft_printf.c ft_print_digit.c ft_print_str.c ft_print_ptr.c
 
 OBJECTS = $(SRCS:.c=.o)
 

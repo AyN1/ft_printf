@@ -9,5 +9,6 @@
 int	ft_print_digit(long n, int base, char specifier);
 int	print_char(int c);
 int	ft_print_str(char *str);
+int	ft_print_ptr(unsigned long long ptr);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: atbicer <atbicer@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 12:25:35 by atbicer           #+#    #+#             */
-/*   Updated: 2024/06/26 12:30:19 by atbicer          ###   ########.fr       */
+/*   Updated: 2024/06/26 13:19:37 by atbicer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	print_format(char specifier, va_list ap)
 		count = print_char(va_arg(ap, int));
 	else if (specifier == 's')
 		count += ft_print_str(va_arg(ap, char *));
+	else if (specifier == 'p')
+		count += ft_print_ptr(va_arg(ap, unsigned long long));
 	else if (specifier == 'd' || specifier == 'i')
 		count += ft_print_digit((long)va_arg(ap, int), 10, specifier);
 	else if (specifier == 'x' || specifier == 'X')
